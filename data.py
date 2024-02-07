@@ -43,3 +43,26 @@ if (x%2) == 0:
     print("even")
 else:
     print("odd") """
+
+""" #Challenge 2
+x = int(input("Subtotal"))
+Service = input("How was the service?")
+if Service == ('bad'):
+    print(float(x))
+elif Service == ('okay'):
+    print(float(x*1.15))
+elif Service == ('good'):
+    print(float(x*1.20))
+elif Service == ('great'):
+    print(float(x*1.25)) """
+
+""" def get_all_factors(n):
+    factors = []
+    for i in range(1,n+1):
+        if n%1 == 0:
+            factors.append(i)
+    return factors 
+
+number = int(input("Please enter a number: "))
+list_of_factors = get_all_factors(number)
+print(list_of_factors) """
