@@ -38,7 +38,8 @@ elif temp == 68:
 else:
     print('cold') """
 
-""" x = int(input("give me a number"))
+""" #Challenge 1
+x = int(input("give me a number"))
 if (x%2) == 0:
     print("even")
 else:
@@ -56,13 +57,25 @@ elif Service == ('good'):
 elif Service == ('great'):
     print(float(x*1.25)) """
 
-""" def get_all_factors(n):
+""" #Challenge 3 
+def allfactors(n):
     factors = []
     for i in range(1,n+1):
-        if n%1 == 0:
+        if n%i == 0:
             factors.append(i)
     return factors 
-
 number = int(input("Please enter a number: "))
-list_of_factors = get_all_factors(number)
-print(list_of_factors) """
+listfactors = allfactors(number)
+print(listfactors) """
+
+#Challenge 4
+
+import math 
+
+def find_gcf(a, b):
+    return math.gcd(a, b)
+
+a = int(input("1"))
+b = int(input("Emter"))
+
+gcf = find_gcf(a, b)
