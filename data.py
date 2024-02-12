@@ -68,14 +68,11 @@ number = int(input("Please enter a number: "))
 listfactors = allfactors(number)
 print(listfactors) """
 
-#Challenge 4
-
-import math 
-
-def find_gcf(a, b):
-    return math.gcd(a, b)
-
-a = int(input("1"))
-b = int(input("Emter"))
-
-gcf = find_gcf(a, b)
+""" #Challenge 4
+def gcd(a,b):
+    while b != 0:
+        a, b = b, a % b 
+    return a 
+num1 = int(input("Enter first number"))
+num2 = int(input("Enter second number"))
+print("The greatest common factor is:", gcd(num1, num2)) """
