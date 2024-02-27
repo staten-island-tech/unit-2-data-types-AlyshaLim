@@ -15,22 +15,22 @@ z = y[0]
 print(y)
 print(z) """
 
-""" y=input("give me a sentence") #input in terminal to type in and writes give me a sentence 
+""" y = input("give me a sentence") #input in terminal to type in and writes give me a sentence 
 print(y) #prints the word in terminal
-y= y.split(" ") #splits into words
-print(len(y)) #prints the length of the sentence by words """
+x = y.split( ) #splits into words
+print(len(x)) #prints the length of the sentence by words """
 
 """ day_of_week = input("what day is it? ")
 if day_of_week == "Friday":
     print("correct")
 else:
     print("incorrect") """
-
+"""  """
 """ x = "test"
 print(f"hello {x}") """
 
-""" 
-temp = 75
+
+""" temp = 75
 if temp > 68:
     print('warm')
 elif temp == 68:
@@ -58,21 +58,24 @@ elif Service == ('great'):
     print(float(x*1.25)) """
 
 """ #Challenge 3 
-def allfactors(n):
-    factors = []
-    for i in range(1,n+1):
-        if n%i == 0:
-            factors.append(i)
-    return factors 
-number = int(input("Please enter a number: "))
-listfactors = allfactors(number)
-print(listfactors) """
+def allfactors(n):      #defines fuction that takes parameter n 
+    factors = []        #defines an empty list to store the factors of n 
+    for i in range(1,n+1):  #allows all factors from 1 to n inclusive
+        if n%i == 0:        #checks if n is divisible by i, the number used in the loop which indiciates i is a factor of n 
+            factors.append(i)   #if i is a factor of n its added to the list of factors 
+    return factors  #returns list of factors after end of loop
+number = int(input("Please enter a number: "))  #input 
+listfactors = allfactors(number)    #calls the allfactors function w the users input and stores the result in list factors 
+print(listfactors)  #prints the list of factors by that number """
 
-""" #Challenge 4
-def gcd(a,b):
-    while b != 0:
-        a, b = b, a % b 
-    return a 
-num1 = int(input("Enter first number"))
-num2 = int(input("Enter second number"))
-print("The greatest common factor is:", gcd(num1, num2)) """
+""" #Challenge 4 
+def gcf(x,y):
+    great = [] 
+    for i in range(1,min(x,y)+1): #python only sees 1 to y not including y so the 1 ensures that they is seen inclusively 
+        if x%i == 0 and y%i == 0:
+            great.append(i)
+    return max(great)
+num1 = int(input("Please enter 1st number: "))
+num2 = int(input("Please enter 2nd number: "))
+greatest = gcf(num1, num2)
+print(greatest) """
